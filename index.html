@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Dolce Vita | Ekskluzywna Włoska Pizzeria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <i class="fas fa-pizza-slice fa-spin"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">La Dolce <span class="gold-text">Vita</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Start</a></li>
+                <li><a href="#about" class="nav-link">O nas</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#reservation" class="nav-link btn-gold">Rezerwacja</a></li>
+            </ul>
+        </div>
+        <div class="italian-border"></div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h1>Smak Prawdziwych <br><span class="gold-text">Włoch</span></h1>
+            <p>Tradycja spotyka się z elegancją w sercu miasta.</p>
+            <a href="#menu" class="btn-outline">Zobacz Menu</a>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding">
+        <div class="container grid-2">
+            <div class="about-text fade-in-left">
+                <h2 class="section-title">Nasza Historia</h2>
+                <p>La Dolce Vita to nie tylko pizzeria, to hołd dla włoskiej sztuki kulinarnej. Nasze ciasto dojrzewa przez 48 godzin, a składniki sprowadzamy prosto z Kampanii.</p>
+                <p>Wierzymy, że elegancja tkwi w prostocie i najwyższej jakości. Zapraszamy do miejsca, gdzie czas płynie wolniej.</p>
+                <div class="signature">Antonio Rossi</div>
+            </div>
+            <div class="about-image fade-in-right">
+                <img src="https://images.unsplash.com/photo-1552539618-7eec9b4d1796?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Wnętrze pizzerii">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding bg-dark">
+        <div class="container">
+            <h2 class="section-title center">Menu Degustacyjne</h2>
+            <div class="menu-grid">
+                
+                <div class="menu-category fade-in-up">
+                    <h3><i class="fas fa-utensils gold-text"></i> Pizza</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Tartufo e Oro</h4>
+                            <span class="price">65 PLN</span>
+                        </div>
+                        <p>Krem truflowy, mozzarella fior di latte, płatki złota, oliwa truflowa.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Prosciutto di Parma</h4>
+                            <span class="price">52 PLN</span>
+                        </div>
+                        <p>Sos pomidorowy San Marzano, rukola, szynka parmeńska, parmezan 24-miesięczny.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Burrata Speciale</h4>
+                            <span class="price">58 PLN</span>
+                        </div>
+                        <p>Sos pomidorowy, świeża burrata, pomidorki cherry, bazylia, pesto genovese.</p>
+                    </div>
+                </div>
+
+                <div class="menu-category fade-in-up delay-100">
+                    <h3><i class="fas fa-wine-glass gold-text"></i> Vini</h3>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Chianti Classico</h4>
+                            <span class="price">120 PLN / but.</span>
+                        </div>
+                        <p>Toskania, Włochy. Wyczuwalne nuty wiśni i dębu.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <h4>Primitivo di Manduria</h4>
+                            <span class="price">140 PLN / but.</span>
+                        </div>
+                        <p>Puglia, Włochy. Głębokie, pełne, z nutą czekolady.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center mt-4">
+                <a href="#" class="link-gold">Pobierz pełne menu (PDF) <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section-padding">
+        <div class="container reservation-container">
+            <div class="form-wrapper fade-in">
+                <h2 class="section-title center">Zarezerwuj Stolik</h2>
+                <p class="center form-subtitle">Spędź z nami wyjątkowy wieczór.</p>
+                
+                <form id="reservationForm" action="/api/reservation" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="name" required placeholder="Imię i Nazwisko">
+                        <input type="tel" name="phone" required placeholder="Numer telefonu">
+                    </div>
+                    <div class="input-group">
+                        <input type="date" name="date" required>
+                        <input type="time" name="time" required>
+                    </div>
+                    <div class="input-group">
+                        <select name="guests" required>
+                            <option value="" disabled selected>Liczba gości</option>
+                            <option value="2">2 Osoby</option>
+                            <option value="3">3 Osoby</option>
+                            <option value="4">4 Osoby</option>
+                            <option value="5+">5+ Osób</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-full">Potwierdź rezerwację</button>
+                    <p class="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="italian-border-top"></div>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>La Dolce <span class="gold-text">Vita</span></h3>
+                <p>Elegancja smaku w każdym kęsie.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p>Ul. Włoska 12, Warszawa</p>
+                <p>+48 123 456 789</p>
+                <p>info@ladolcevita.pl</p>
+            </div>
+            <div class="footer-col">
+                <h4>Godziny</h4>
+                <p>Pon - Czw: 12:00 - 22:00</p>
+                <p>Pt - Sob: 12:00 - 00:00</p>
+                <p>Niedz: 12:00 - 22:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2024 La Dolce Vita Pizzeria. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
