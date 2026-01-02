@@ -1,9 +1,5 @@
 # 🍕 La Dolce Vita - Strona internetowa Pizzeri
 
-![Project Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Design](https://img.shields.io/badge/Design-Premium-gold)
-
 Ekskluzywny, w pełni responsywny szablon strony internetowej dla pizzerii w stylu włoskim. Projekt łączy minimalizm, elegancję (ciemny motyw ze złotymi akcentami) oraz nowoczesne animacje. Strona została zaprojektowana z myślą o lokalach premium.
 
 ![creenshot](https://i.snipboard.io/2GkfNB.jpg)
