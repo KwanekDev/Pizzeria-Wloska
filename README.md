@@ -1,4 +1,4 @@
-# 🍕 La Dolce Vita | Premium Pizzeria Template
+# 🍕 La Dolce Vita | Demo
 
 Ekskluzywny, w pełni responsywny projekt strony wizytówkowej dla pizzerii lub restauracji włoskiej typu premium. Design opiera się na głębokiej czerni, złotych akcentach i płynnych animacjach, które budują prestiżowy wizerunek lokalu w sieci.
 
