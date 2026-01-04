@@ -1,27 +1,36 @@
-# 🍕 La Dolce Vita - Strona internetowa Pizzeri
+# 🍕 La Dolce Vita | Premium Pizzeria Template
 
-Ekskluzywny, w pełni responsywny szablon strony internetowej dla pizzerii w stylu włoskim. Projekt łączy minimalizm, elegancję (ciemny motyw ze złotymi akcentami) oraz nowoczesne animacje. Strona została zaprojektowana z myślą o lokalach premium.
+Ekskluzywny, w pełni responsywny projekt strony wizytówkowej dla pizzerii lub restauracji włoskiej typu premium. Design opiera się na głębokiej czerni, złotych akcentach i płynnych animacjach, które budują prestiżowy wizerunek lokalu w sieci.
 
-![creenshot](https://i.snipboard.io/2GkfNB.jpg)
+---
 
-## ✨ Cechy projektu
+## ✨ Kluczowe Funkcje
+- **Design Premium:** Ciemna kolorystyka (`#1a1a1a`) ze złotymi detalami.
+- **Włoski Charakter:** Subtelne detale nawiązujące do flagi Włoch, wkomponowane w nowoczesny układ.
+- **Zaawansowane Animacje:**
+    - Customowy loader startowy budujący wrażenie profesjonalizmu.
+    - Reveal effects (pojawianie się elementów podczas scrollowania)
+- **Dynamiczne Menu:** Przejrzysty podział na kategorie z elegancką prezentacją cen i składników.
+- **System Rezerwacji:** Interaktywny formularz rezerwacji stolika (UI przygotowane pod integrację z backendem).
 
-* **Design Premium:** Ciemna kolorystyka (`#1a1a1a`) połączona ze złotymi akcentami i szeryfową typografią (*Playfair Display*).
-* **Włoskie Akcenty:** Subtelne wykorzystanie kolorów flagi Włoch (zielony, biały, czerwony) w obramowaniach, bez naruszania elegancji.
-* **W pełni Responsywny (RWD):** Dostosowany do urządzeń mobilnych, tabletów i desktopów.
-* **Animacje:**
-    * Loader startowy.
-    * Elementy pojawiające się podczas przewijania (`Intersection Observer`).
-    * Płynne przejścia (hover effects).
-* **Sekcje:** Hero, O nas, Menu (z podziałem na kategorie), Formularz Rezerwacji, Footer.
-* **Frontend-only:** Formularz rezerwacji przygotowany pod integrację z API.
+---
 
-## 🛠 Technologie
+## 🛠️ Technologie
+Projekt wykonany w technologii **Vanilla JS** (czysty kod), co gwarantuje błyskawiczne ładowanie strony bez zbędnego balastu bibliotek:
 
-Projekt został stworzony w czystym kodzie, bez zbędnych frameworków (Vanilla JS):
+- **HTML5** – Semantyczna struktura przyjazna pod SEO.
+- **CSS3** – Flexbox, CSS Grid, zaawansowane animacje i zmienne (`:root`) ułatwiające szybką zmianę kolorystyki.
+- **JavaScript (ES6+)** – Obsługa logiki menu mobilnego, płynnego scrollowania i walidacji formularzy.
 
-* **HTML5** - Semantyczna struktura.
-* **CSS3** - Flexbox, Grid, Zmienne CSS (`:root`), Animacje.
-* **JavaScript (ES6+)** - Obsługa menu mobilnego, animacji scrollowania i walidacji formularza.
-* **FontAwesome** - Ikony.
-* **Google Fonts** - *Playfair Display* & *Lato*.
+---
+
+## 📸 Podgląd
+<img width="1912" height="3476" alt="screencapture-file-C-Users-Kwanek-Documents-strony-strona8-index-html-2026-01-04-18_27_34" src="https://github.com/user-attachments/assets/4df7357c-0e02-4636-a8c6-f4fafe38ee65" />
+
+
+---
+
+## ⚙️ Instalacja
+```bash
+git clone https://github.com/KwanekDev/Pizzeria-Wloska
+```
